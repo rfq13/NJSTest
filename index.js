@@ -1,11 +1,11 @@
 const express = require("express");
 const cors = require("cors");
-const morganMiddleware = require("../middlewares/morganMiddleware");
-const taskRoute = require("../routes/TaskRoute");
+const morganMiddleware = require("./middlewares/morganMiddleware");
+const taskRoute = require("./routes/TaskRoute");
 
 // The morgan middleware does not need this.
 // This is for a manual log
-const logger = require("../utils/logger");
+const logger = require("./utils/logger");
 
 const app = express();
 
